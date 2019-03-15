@@ -67,3 +67,18 @@ variable "masters_lbs_domain" {
   type        = "string"
   description = "The domain that points to all the Load Balancers' ip."
 }
+
+variable "workers_replicas" {
+  type        = "string"
+  description = "The amount of worker nodes to create."
+}
+
+variable "workers_base_image" {
+  type        = "string"
+  description = "The base image to use for the workers."
+}
+
+variable "workers_instance_type" {
+  type        = "string"
+  description = "The type of instance to use for the workers."
+}
